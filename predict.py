@@ -71,7 +71,7 @@ def create_network(network_input, n_vocab):
     model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
 
     # Load the weights to each node
-    model.load_weights('new.hdf5')
+    model.load_weights('vidgame8hour.hdf5')
 
     return model
 
@@ -132,7 +132,9 @@ def create_midi(prediction_output):
 
     midi_stream = stream.Stream(output_notes)
 
-    midi_stream.write('midi', fp='test_output.mid')
+    midi_stream.write('midi', fp=f'song{song_number}.mid')
 
 if __name__ == '__main__':
-    generate()
+    for song_number in range(5):
+        print(f'Song {song_number}')
+        generate()
