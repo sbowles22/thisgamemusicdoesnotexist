@@ -19,7 +19,7 @@ def generate():
     # Get all pitch names
     pitchnames = sorted(set(item for item in notes))
     # Get all pitch names
-    n_vocab = len(set(notes)) - 1
+    n_vocab = len(set(notes))
 
     network_input, normalized_input = prepare_sequences(notes, pitchnames, n_vocab)
     model = create_network(normalized_input, n_vocab)
@@ -71,7 +71,7 @@ def create_network(network_input, n_vocab):
     model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
 
     # Load the weights to each node
-    model.load_weights('og.hdf5')
+    model.load_weights('new.hdf5')
 
     return model
 
