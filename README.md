@@ -1,4 +1,3 @@
-# thisgamemusicdoesnotexsist
 Website hosted with github pages that generates game music using a LSTM neural network.
 
 # Training
