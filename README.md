@@ -14,6 +14,6 @@ The neural net was trained for about 8 hours (57/200 epochs wanted). I used a In
 * [data](https://bitmidi.com/)
 
 ## MUSIC!
-[music](song.mp3)
-[more music](song1.mp3)
-[even more music](song2.mp3)
+* [music](song.mp3)
+* [more music](song1.mp3)
+* [even more music](song2.mp3)
